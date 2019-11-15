@@ -1,0 +1,12 @@
+.classpath
+.project
+.settings/
+target/
+.idea/
+.DS_Store
+.bash_profile
+*.iml
+*.class
+*.log
+*.jar
+out/

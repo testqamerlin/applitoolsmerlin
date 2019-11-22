@@ -1,4 +1,4 @@
-package com.applitoolsqamerlin.com.applitoolsqamerlin.utitilities;
+package com.applitoolsqamerlin.utitilities;
 
 import java.util.concurrent.TimeUnit;
 import org.junit.jupiter.api.AfterEach;
@@ -35,10 +35,10 @@ public class BaseConfigSelenium {
 
     if(flagOS == "Windows") {
       System.setProperty("webdriver.chrome.driver", "chromedriverWIN.exe");
-      driver = new ChromeDriver();
+      driver = new ChromeDriver(options);
     } else if(flagOS == "Mac") {
       System.setProperty("webdriver.chrome.driver", "chromedriver");
-      driver = new ChromeDriver();
+      driver = new ChromeDriver(options);
     }
 
     driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

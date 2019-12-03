@@ -34,17 +34,15 @@ public class DinamicGifPage {
   }
 
   public String dinamicGifPage() {
-    return getBaseURL()+getEnvironment("PATHDINAMICGIF");
+    return getBaseURL() + getEnvironment("PATHDINAMICGIF");
   }
 
-  public boolean dinamicGifFlashSale2Exist()
-  {
-    return generalUtilities.existElement(dinamicFlashSale2Locator,driver);
+  public boolean dinamicGifFlashSale2Exist() {
+    return generalUtilities.existElement(dinamicFlashSale2Locator, driver);
   }
 
-  public boolean dinamicGifFlashSaleExist()
-  {
-    return generalUtilities.existElement(dinamicFlashSaleLocator,driver);
+  public boolean dinamicGifFlashSaleExist() {
+    return generalUtilities.existElement(dinamicFlashSaleLocator, driver);
   }
 
 }

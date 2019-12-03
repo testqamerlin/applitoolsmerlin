@@ -17,6 +17,7 @@ public class HomeTest extends BaseConfigSelenium {
     Integer[] arrayOrder = homePage.returnOrderMinorToHigher();
     homePage.clickAmountHome();
     Integer[] actualOrder = homePage.returnAmountValues();
+    System.out.println(homePage.returnTextDescriptionHome());
 
     softAssertions.assertThat(arrayOrder[0]).isEqualTo(actualOrder[0]);
     softAssertions.assertThat(arrayOrder[1]).isEqualTo(actualOrder[1]);
@@ -43,6 +44,15 @@ public class HomeTest extends BaseConfigSelenium {
     softAssertions.assertThat(arrayOrder[5]).isEqualTo(actualOrder[5]);
 
     softAssertions.assertAll();
+  }
+
+  @Test
+  public void test()
+  {
+    homePage.hash();
+//    homePage.returnOrderHigherToMinor22();
+//    homePage.returnAmountValues442();
+
   }
 
   @BeforeEach

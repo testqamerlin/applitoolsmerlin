@@ -15,7 +15,6 @@ public class DinamicGifTest extends BaseConfigSelenium {
   @Test
   public void checkDinamicGifExist() {
 
-
     softAssertions.assertThat(dinamicGifPage.dinamicGifFlashSale2Exist()).isTrue();
     softAssertions.assertThat(dinamicGifPage.dinamicGifFlashSaleExist()).isTrue();
 
